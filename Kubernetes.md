@@ -1,6 +1,6 @@
 # Kubernetes (K8s)
 
-Kubernetes is a container orchestration tool and much more than that. Kubernetes can run of cloud, servers, PCs and other related places. It can also replicate containers, Pods from one to another etc.
+Kubernetes is a container orchestration tool and much more than that. Kubernetes can run on cloud, servers, PCs and other related places. It can also replicate containers, Pods from one to another etc.
 
 # What is Container Orchestration ?
 
@@ -31,7 +31,32 @@ There should be **Kube-Proxy** inside the Nodes in Worker Nodes who communicates
 
 **Pod** is a scheduling unit in Kubernetes it contains Container. So in Kubernetes all containers should be inside a Pod. One container one Pod is best practice but we can have more than one container inside a Pod.
 
+**Control Manager** it is a tool that helps to manage the entire cluster. It has four functionalities 
+
+- Desired State
+- Current State
+- Differences
+- Make the changes
+
 We can interact with the Kubectl using two ways in our terminal 
 
 - Declarative Way : In this way we give all details in a manifest file or YAML file. 
 - Imperative Way : In this way we give individual commands for each tasks.
+
+# Basic Commands
+
+`kubectl version`
+`kubectl version --output=yaml`
+`minikube version`
+`minikube start`
+`minikube status`
+`kubectl get pods`
+`kubectl get nodes`
+`minikube dashboard`
+`minikube docker-env`
+`minikube ssh`
+`kubectl config view`
+`kubectl get all`
+`kubectl delete pod pode-name`
+`kubectl get deployments`
+`kubectl delete deployments deployment-name`
